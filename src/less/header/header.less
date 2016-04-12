@@ -1,0 +1,81 @@
+@import '../function/function';
+@import '../font/font';
+
+.header{
+	background: url('../images/main.png') no-repeat!important;
+	.size(100%, 799px, none);
+}
+
+.logo, .menu{
+	.padding(0,0,0,0)!important;
+}
+
+.logo p{
+	.p(28px, lecker, #e84c3d);
+	.padding(60px, 0, 0, 0);
+}
+
+.menu ul{
+	.padding(60px,0,0,0);
+	.margin(0,0,0,0);
+}
+
+.menu ul li{
+	.float;
+	.margin(0,0,0,30px);
+	.relative;
+}
+
+.menu ul li a{
+	.a(14px, opensans, #333b46);
+}
+
+
+
+.menu ul li > ul {
+	.absolute(absolute, 99, 10px, 0);
+	.size(100px, auto, none);
+	.padding(25px, 15px, 0, 0);
+	.display;
+}
+
+.menu ul li:hover > ul {
+	.display(block);
+}
+
+.menu ul li > ul li a{
+	.padding(0, 10px, 0, 0);
+	.float;
+}
+
+.header-img p{
+	.text-align; 
+}
+
+.box-in1{
+	.padding(270px, 0, 0, 0);
+}
+
+.box-in1 p:first-child{
+	.margin(0,0,0,0);
+	.p(35px, roboto-medium, #333b46);
+}
+
+.box-in1 p:last-child{
+	.p(16px, opensans, #81868e);
+}
+
+.box-in2{
+	.padding(200px,0,0,0);
+	cursor: pointer;
+}
+
+.box-in2 p:first-child{
+	background: url('../images/scroll-down.png') no-repeat center!important;
+	.size(100%, 38px, none);
+}
+
+.box-in2 p:last-child{
+	.p(12px, opensans, #e84c3d);
+}
+
