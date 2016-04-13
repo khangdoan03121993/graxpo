@@ -355,19 +355,6 @@ li {
   padding-left: 0;
   padding-right: 0;
 }
-.simple-step .row {
-  position: relative;
-}
-.border1 {
-  width: 340px;
-  height: auto;
-  background: none;
-  position: absolute;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  border-top: 1px solid  #c2c2c2;
-}
 .header {
   background: url('../images/main.png') no-repeat !important;
   width: 100%;
