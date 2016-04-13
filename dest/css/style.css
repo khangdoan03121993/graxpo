@@ -355,6 +355,95 @@ li {
   padding-left: 0;
   padding-right: 0;
 }
+.work {
+  width: 100%;
+  height: auto;
+  background: #ececec;
+  padding-top: 90px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.work-top p:first-child {
+  text-align: center;
+  font-size: 20px;
+  font-family: roboto-medium;
+  color: #333b46;
+}
+.work-top p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45px;
+  height: 3px;
+  background: #898989;
+}
+.work-top p:last-child {
+  font-size: 14px;
+  font-family: opensans;
+  color: #92969c;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.work-mid {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: none;
+}
+.work-into {
+  float: left;
+  flex: 1 1;
+  padding-bottom: 22.5%;
+  width: 33.33333333%;
+}
+.work-into:first-child {
+  background: url('../images/coffe-shop.png') no-repeat center;
+}
+.work-into:nth-child(2) {
+  background: url('../images/thanks.png') no-repeat center;
+}
+.work-into:last-child {
+  background: url('../images/cat&madison.png') no-repeat center;
+}
+.work-into {
+  position: relative;
+}
+.work-in {
+  display: none;
+}
+.work-into:hover .work-in {
+  position: absolute;
+  z-index: 99;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: #e84c3d;
+  opacity: 0.8;
+  cursor: pointer;
+  display: block;
+}
+.work-into:hover .work-in p {
+  text-align: center;
+  line-height: 2;
+  font-size: 14px;
+  font-family: opensans;
+  color: white;
+  width: 135px;
+  height: 35px;
+  background: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-top: 30%;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header {
   background: url('../images/main.png') no-repeat !important;
   width: 100%;
@@ -530,6 +619,12 @@ li {
     padding-right: 0;
   }
 }
+@media screen and (min-device-width: 375px) and (max-device-width: 414px) {
+  .work-into:hover .work-in p {
+    width: 110px;
+    margin-top: 20%;
+  }
+}
 @media (max-width: 320px) {
   .box-in1 {
     padding-left: 2%;
@@ -540,6 +635,19 @@ li {
   }
   .box-in2 {
     padding-top: 53px;
+  }
+  .simple-step p:first-child {
+    width: 90px;
+    height: 90px;
+    line-height: 1.5;
+  }
+  .simple-step p:first-child span {
+    width: 70px;
+    height: 70px;
+  }
+  .work-into:hover .work-in p {
+    width: 90px;
+    margin-top: 15%;
   }
 }
 .underline-left {
