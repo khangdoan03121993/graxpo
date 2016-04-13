@@ -616,6 +616,40 @@ li {
   padding-right: 0;
   text-align: center;
 }
+.porfolio-mid {
+  text-align: center;
+}
+.porfolio-mid ul {
+  text-align: center;
+  padding-top: 65px;
+  padding-bottom: 45px;
+  padding-left: 0;
+  padding-right: 0;
+  display: inline-block;
+}
+.porfolio-mid ul li {
+  float: left;
+}
+.porfolio-mid ul li a > p:first-child {
+  font-size: 14px;
+  font-family: opensans;
+  color: #464646;
+}
+.porfolio-mid ul li a > p:last-child {
+  width: 35px;
+  height: 2px;
+  background: #f3f3f3;
+}
+.porfolio-mid ul li:first-child a > p:last-child {
+  width: 35px;
+  height: 2px;
+  background: #898989;
+}
+.porfolio-mid ul li:hover a > p:last-child {
+  width: 35px;
+  height: 2px;
+  background: #898989;
+}
 .header {
   background: url('../images/main.png') no-repeat !important;
   width: 100%;
