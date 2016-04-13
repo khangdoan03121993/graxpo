@@ -113,7 +113,7 @@ module.exports = function(grunt) {
 					relative: true,
 					sections: {
 						section: {
-							//demo: '<%= src_html %>/demo.html',
+							// demo: '<%= src_html %>/demo.html',
 						},
 						entry: {     
 						},
@@ -128,9 +128,20 @@ module.exports = function(grunt) {
 							footer: '<%= src_html %>/footer.html',
 							
 							// body
-							bodytop: '<%= src_html %>/bodytop.html',
-							bodymid: '<%= src_html %>/bodymid.html',
-							bodybot: '<%= src_html %>/bodybot.html',
+							about: '<%= src_html %>/about.html',
+							service: '<%= src_html %>/best-service.html',
+							blog: '<%= src_html %>/blog.html',
+							crew: '<%= src_html %>/crew.html',
+							feature: '<%= src_html %>/featured-work.html',
+							ideas: '<%= src_html %>/ideas.html',
+							parameter: '<%= src_html %>/parameter.html',
+							porfolio: '<%= src_html %>/porfolio.html',
+							price: '<%= src_html %>/price.html',
+							subscribe: '<%= src_html %>/subscribe.html',
+							test: '<%= src_html %>/testimonials.html',
+							steps: '<%= src_html %>/three-simple-steps.html',
+							title: '<%= src_html %>/title.html',
+							do: '<%= src_html %>/what-we-do.html',
 						}
 					},
 					data: {

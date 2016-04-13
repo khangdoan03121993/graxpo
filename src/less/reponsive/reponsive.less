@@ -1,0 +1,91 @@
+@media (max-width: 1024px){
+	.menu ul li {
+	    margin-right: 19px;
+	}
+}
+
+@media (max-width: 768px){
+	.logo p {
+		text-align: center;
+	}
+
+	.menu ul {
+		padding-top: 0; 
+		background: red;
+	}
+
+	.menu ul li{
+		float: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.menu ul li p{
+		text-align: center;
+		color: white;
+	}
+
+	.menu ul li > ul {
+	    top: inherit;
+	    bottom: 0px;
+	    left: 65%;
+	    padding-top: 0px; 
+	    padding-bottom: 0px;
+	}
+
+	.menu ul li:first-child > ul, .menu ul li:nth-child(2) > ul{
+		top: 0px;
+	    bottom: inherit;
+	}
+
+	.open{
+		display: none;
+	}
+
+	.header .row{
+		position: relative;
+	}
+
+	.nav{
+		position: absolute;
+		z-index: 9999;
+		width: 29px;
+		height: 25px;
+		background: url('../images/icon-menu.png') no-repeat center;
+		top: 60px;
+		right: 0;
+	}
+
+	.box-in1{
+		padding-left: 30%;
+	}
+
+	.box-in1 p{
+		text-align: inherit;
+	}
+
+	.about-img{
+		padding-top: 20px;
+	}
+
+	.box-in3{
+		.padding(10px, 10px, 0, 0);
+	}
+
+}
+
+@media (max-width: 320px){
+	.box-in1{
+		padding-left: 2%;
+		padding-top: 450px;
+	}
+
+	.box-in1 p:last-child{
+		display: none;
+	}
+
+	.box-in2{
+		padding-top: 53px;
+	}
+
+}

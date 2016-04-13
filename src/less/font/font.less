@@ -1,0 +1,52 @@
+@import '../function/function';
+
+@font-face {
+	font-family: lecker;
+	src: url("../font/LeckerliOne-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: opensans;
+	src: url("../font/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: roboto-bold;
+	src: url("../font/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: roboto-light;
+	src: url("../font/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: roboto-medium;
+	src: url("../font/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: roboto-regular;
+	src: url("../font/Roboto-Regular.ttf") format("truetype");
+}
+
+
+a, a:hover{
+	.text-decoration!important; 
+}
+
+ul, li{
+	.list-style; 
+}
+
+.a(@fontsize:14px, @fontfamily: Arial, @color:red){
+	font-size: @fontsize;
+	font-family: @fontfamily;
+	color: @color;
+}
+
+.p(@fontsize:14px, @fontfamily: Arial, @color:red){
+	font-size: @fontsize;
+	font-family: @fontfamily;
+	color: @color;
+}
