@@ -541,6 +541,81 @@ li {
 .flex {
   display: flex;
 }
+.ideas {
+  width: 100%;
+  height: auto;
+  background: url('../images/building.png') no-repeat center;
+}
+.ideas-in {
+  background: black;
+  opacity: 0.899;
+  padding-top: 110px;
+  padding-bottom: 100px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ideas-in p {
+  text-align: center;
+}
+.ideas-in p:first-child {
+  font-size: 30px;
+  font-family: roboto-light;
+  color: white;
+}
+.ideas-in p:nth-child(2) {
+  font-size: 20px;
+  font-family: roboto-light;
+  color: white;
+}
+.ideas-in a > p {
+  font-size: 16px !important;
+  font-family: opensans !important;
+  color: white !important;
+  width: 180px;
+  height: 50px;
+  background: #e84c3d;
+  border-radius: 10px;
+  line-height: 3;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1 !important;
+}
+.profolio {
+  width: 100%;
+  height: auto;
+  background: #f3f3f3;
+  padding-top: 100px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.porfolio-top p:first-child {
+  font-size: 20px;
+  font-family: roboto-medium;
+  color: #333b46;
+  text-align: center;
+}
+.porfolio-top p:nth-child(2) {
+  width: 45px;
+  height: 3px;
+  background: #898989;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.porfolio-top p:last-child {
+  font-size: 14px;
+  font-family: opensans;
+  color: #93979e;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
 .header {
   background: url('../images/main.png') no-repeat !important;
   width: 100%;
