@@ -650,6 +650,74 @@ li {
   height: 2px;
   background: #898989;
 }
+.subscribe {
+  width: 100%;
+  height: auto;
+  background: url('../images/dell.png') no-repeat center;
+}
+.subscribe-in {
+  background: #e84c3d;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  padding-left: 0;
+  padding-right: 0;
+  opacity: 0.899;
+}
+.subscribe-left p:first-child {
+  font-size: 18px;
+  font-family: roboto-medium;
+  color: white;
+}
+.subscribe-left p:nth-child(2) {
+  width: 45px;
+  height: 3px;
+  background: white;
+}
+.subscribe-left p:last-child {
+  font-size: 12.53px;
+  font-family: opensans;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.subscribe-right {
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.subscribe-right input[type="text"] {
+  width: 275px;
+  height: 40px;
+  background: #e84c3d;
+  float: left;
+}
+.subscribe-right input[placeholder] {
+  font-size: 12.5px;
+  font-family: opensans;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 0;
+  border: 1px solid white;
+}
+.subscribe-right button {
+  width: 130px;
+  height: 40px;
+  background: #e84c3d;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+}
+.subscribe-right button p {
+  font-size: 12.5px;
+  font-family: roboto-bold;
+  color: white;
+}
 .header {
   background: url('../images/main.png') no-repeat !important;
   width: 100%;
