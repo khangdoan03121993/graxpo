@@ -9,7 +9,10 @@ $(window).load(function() {
     $('.box-in2').toggleClass('open');
 	})
 
-
+  $('.test > ul.flex-direction-nav').css('display', 'none');
+  $('.test > ol').addClass('pagging');
+  $('.pagging').find('a').empty();
+  $('.flex-viewport').addClass('slider');
 });
 
      var highestBox = 0;
