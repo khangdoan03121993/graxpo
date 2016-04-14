@@ -720,6 +720,11 @@ li {
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   border-left: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  float: left;
 }
 .subscribe-right button p {
   font-size: 12.5px;
@@ -761,7 +766,65 @@ li {
   padding-right: 0;
 }
 .user img {
-  max-width: 100%;
+  width: 100%;
+}
+.user {
+  position: relative;
+}
+.user-box {
+  display: none;
+}
+.user:hover .user-box {
+  position: absolute;
+  z-index: 99;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  height: auto;
+  background: #e84c3d;
+  padding-top: 35px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  display: block;
+}
+.user-box p.user-content {
+  font-size: 11px;
+  font-family: roboto-light;
+  color: white;
+  text-align: center;
+}
+.social-user {
+  text-align: center;
+}
+.social-user p {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-size: 14.8px;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+.user p.name-user {
+  text-align: center;
+  font-size: 17px;
+  font-family: roboto-medium;
+  color: #333b46;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.user p.job-user {
+  text-align: center;
+  font-size: 12px;
+  font-family: roboto-regular;
+  color: #333b46;
 }
 .header {
   width: 100%;
@@ -952,6 +1015,10 @@ li {
   .box-in2 {
     padding-top: 130px;
   }
+  .subscribe-right button {
+    border-left: 1px solid white;
+    margin-top: 10px;
+  }
 }
 @media (max-width: 320px) {
   .box-in1 {
@@ -979,6 +1046,10 @@ li {
   }
   .flex-in {
     flex: 1 1;
+  }
+  .subscribe-right button {
+    border-left: 1px solid white;
+    margin-top: 10px;
   }
 }
 .underline-left {

@@ -1,0 +1,73 @@
+@import '../function/function';
+@import '../font/font';
+
+.crew{
+	.size(100%, auto, #ececec);
+	.padding(100px, 70px, 0, 0);
+}
+
+.crew-top p:first-child{
+	.p(20px, roboto-medium, #333b46);
+	.text-align;
+}
+
+.crew-top p:nth-child(2){
+	.size(45px, 3px, #898989);
+	.margin(0, 0, auto, auto);
+}
+
+.crew-top p:last-child{
+	.p(14px, opensans, #92969c);
+	.text-align;
+	.padding(30px, 75px, 0, 0);
+}
+
+.user img{
+	width: 100%;
+}
+
+.user{
+	.relative;
+	
+}
+
+.user-box{
+	display: none;
+}
+
+.user:hover .user-box{
+	.absolute(absolute, 99, 40%, 5%);
+	.size(90%, auto, #e84c3d);
+	.padding(35px, 10px, 0, 0);
+	display: block;
+}
+
+.user-box p.user-content{
+	.p(11px, roboto-light, white);
+	.text-align;
+}
+
+.social-user{
+	.text-align;
+}
+
+.social-user p{
+	display: inline-block;
+	.size(30px, 30px, none);
+	.border-radius(20px);
+	border: 1px solid white;
+	.p(14.8px, Arial, white);
+	.text-align;
+	.line-height;
+}
+
+.user p.name-user{
+	.text-align;
+	.p(17px, roboto-medium, #333b46);
+	.padding(30px, 0, 0, 0);
+}
+
+.user p.job-user{
+	.text-align;
+	.p(12px, roboto-regular, #333b46);
+}

@@ -12,6 +12,21 @@ $(window).load(function() {
 
 });
 
+     var highestBox = 0;
+        $('.user > a > img').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height(); 
+                highestBox1 = highestBox*1.5;
+        }
+        return highestBox1;
+    });    
+    $('.user > a > img').height(highestBox1);
+
+
+   
+
+
+
 $(window).resize(function(){
 
   if ($(window).width() <= 768){  
