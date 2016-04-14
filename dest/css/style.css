@@ -274,6 +274,12 @@ li {
   margin-right: 0;
   opacity: 1 !important;
 }
+.parameter-into {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 80px;
+  padding-right: 0;
+}
 .step {
   width: 100%;
   height: auto;
@@ -518,7 +524,7 @@ li {
   font-size: 14px;
   font-family: opensans;
   color: white;
-  width: 60%;
+  width: 50%;
   height: auto;
   background: none;
   padding-top: 20px;
