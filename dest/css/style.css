@@ -49,7 +49,7 @@ li {
   height: 3px;
   background: #898989;
 }
-.about-text p:last-child {
+.about-text p:nth-child(3) {
   font-size: 14px;
   font-family: opensans;
   color: #93979e;
@@ -57,6 +57,9 @@ li {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  width: 80%;
+  height: auto;
+  background: none;
 }
 .about-text .learn {
   width: 165px;
@@ -122,6 +125,13 @@ li {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .what-mid .ui {
   border: 3px solid #ebebeb;
@@ -313,6 +323,13 @@ li {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .simple-step p:first-child {
   width: 100px;
@@ -394,6 +411,13 @@ li {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .work-mid {
   display: flex;
@@ -404,7 +428,7 @@ li {
 .work-into {
   float: left;
   flex: 1 1;
-  padding-bottom: 22.5%;
+  padding-bottom: 23.8%;
   width: 33.33333333%;
 }
 .work-into:first-child {
@@ -486,6 +510,13 @@ li {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .service-mid {
   width: 100%;
@@ -628,6 +659,13 @@ li {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .porfolio-mid {
   text-align: center;
@@ -771,6 +809,13 @@ li {
   padding-bottom: 75px;
   padding-left: 0;
   padding-right: 0;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .user img {
   width: 100%;
@@ -906,6 +951,13 @@ li {
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  width: 60%;
+  height: auto;
+  background: none;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 .test-content p.author {
   font-size: 20px;
@@ -956,6 +1008,115 @@ li {
   padding-bottom: 100px;
   padding-left: 0;
   padding-right: 0;
+}
+.blog-top p:first-child {
+  font-size: 20px;
+  font-family: roboto-medium;
+  color: #333b46;
+  text-align: center;
+}
+.blog-top p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45px;
+  height: 3px;
+  background: #898989;
+}
+.blog-top p:last-child {
+  font-size: 14px;
+  font-family: opensans;
+  color: #93979e;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-height img {
+  width: 100%;
+  position: relative;
+}
+.blog-height:hover .blog-in {
+  display: block;
+}
+.blog-in {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 15px;
+  width: 50%;
+  height: 100%;
+  background: #e84c3d;
+  padding-top: 120px;
+  padding-bottom: 110px;
+  padding-left: 30px;
+  padding-right: 0;
+  display: none;
+}
+.blog-info {
+  width: 80%;
+  height: auto;
+  background: none;
+}
+.blog-title p:first-child {
+  font-size: 16px;
+  font-family: roboto-medium;
+  color: white;
+  margin-top: none;
+  margin-bottom: 0;
+  margin-left: none;
+  margin-right: none;
+}
+.blog-title p:nth-child(2) {
+  font-size: 14px;
+  font-family: roboto-light;
+  color: white;
+  margin-top: none;
+  margin-bottom: 10px;
+  margin-left: none;
+  margin-right: none;
+}
+.blog-title p:last-child {
+  width: 45px;
+  height: 2px;
+  background: white;
+  margin-top: none;
+  margin-bottom: 20px;
+  margin-left: none;
+  margin-right: none;
+}
+.blog-content p {
+  font-size: 12px;
+  font-family: opensans;
+  color: white;
+  margin-top: none;
+  margin-bottom: 20px;
+  margin-left: none;
+  margin-right: none;
+}
+.blog-date p:first-child {
+  float: left;
+  font-size: 16px;
+  font-family: Arial;
+  color: white;
+}
+.blog-date p:last-child {
+  font-size: 12px;
+  font-family: opensans;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: none;
+  padding-left: 20px;
+  padding-right: none;
 }
 .header {
   width: 100%;
@@ -1133,6 +1294,9 @@ li {
     padding-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
+  }
+  .blog-right {
+    margin-top: 10px;
   }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 414px) {
