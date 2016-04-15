@@ -13,21 +13,33 @@ $(window).load(function() {
   $('.test > ol').addClass('pagging');
   $('.pagging').find('a').empty();
   $('.flex-viewport').addClass('slider');
-});
 
-     var highestBox = 0;
+  var highestBox = 0;
+     var highestBox1;
         $('.user > a > img').each(function(){  
                 if($(this).height() > highestBox){  
                 highestBox = $(this).height(); 
                 highestBox1 = highestBox*1.5;
         }
         return highestBox1;
-    });    
+    }); 
+
+    $('.blog-height > a > img').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height(); 
+                
+        }
+        return highestBox;
+    }); 
+
+
     $('.user > a > img').height(highestBox1);
+    $('.blog-height > a > img').height(highestBox);
 
 
-   
+});
 
+     
 
 
 $(window).resize(function(){

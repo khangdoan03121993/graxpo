@@ -41,12 +41,21 @@
 	left: @left;
 }
 
+.absolute-right(@item:absolute, @zIdex: 999, @top: 0, @right: 0){
+	position: @item;
+	z-index: @zIdex;
+	top: @top;
+	right: @right;
+}
+
 .absolute-bottom(@item:absolute, @zIdex: 999, @bottom: 0, @left: 0){
 	position: @item;
 	z-index: @zIdex;
 	bottom: @bottom;
 	left: @left;
 }
+
+
 
 .display(@item:none){
 	display: @item;
