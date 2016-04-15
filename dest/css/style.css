@@ -1216,12 +1216,155 @@ li {
 .basic:hover ul li:last-child p {
   background: #e84c3d;
   color: white;
+  border: 1px solid #e84c3d;
 }
 .basic-in {
   border-radius: 10px;
 }
 .basic:hover .basic-in {
   box-shadow: 0 0 20px #959191;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  background: #f3f3f3;
+  padding-top: none;
+  padding-bottom: 80px;
+  padding-left: none;
+  padding-right: none;
+}
+.contact-top p:first-child {
+  font-size: 20px;
+  font-family: roboto-medium;
+  color: #333b46;
+  text-align: center;
+}
+.contact-top p:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45px;
+  height: 3px;
+  background: #898989;
+}
+.contact-top p:last-child {
+  font-size: 14px;
+  font-family: opensans;
+  color: #93979e;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 40%;
+  height: auto;
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-right .address p.contact-icon {
+  font-size: 30px;
+  font-family: Arial;
+  color: #e84c3d;
+  float: left;
+}
+.contact-right {
+  padding-top: 70px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-right .address p.contact-content {
+  font-size: 14px;
+  font-family: opensans;
+  color: #93979e;
+  padding-top: 10px;
+  padding-bottom: none;
+  padding-left: 45px;
+  padding-right: none;
+  width: 50%;
+  height: auto;
+  background: none;
+}
+.contact-left .name {
+  width: 47%;
+  height: 45px;
+  background: #f3f3f3;
+  border: 1px solid #ebebeb;
+  padding-top: none;
+  padding-bottom: none;
+  padding-left: 15px;
+  padding-right: none;
+  font-size: 14px;
+  font-family: opensans;
+  color: #81868e;
+}
+.contact-left .email {
+  width: 48%;
+  height: 45px;
+  background: #f3f3f3;
+  border: 1px solid #ebebeb;
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 22px;
+  margin-right: none;
+  padding-top: none;
+  padding-bottom: none;
+  padding-left: 15px;
+  padding-right: none;
+  font-size: 14px;
+  font-family: opensans;
+  color: #81868e;
+}
+.contact-left .mess {
+  width: 99%;
+  height: auto;
+  background: #f3f3f3;
+  border: 1px solid #ebebeb;
+  margin-top: 22px;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+  padding-top: 20px;
+  padding-bottom: 215px;
+  padding-left: 25px;
+  padding-right: none;
+  font-size: 14px;
+  font-family: opensans;
+  color: #81868e;
+}
+.contact-left button {
+  margin-top: 22px;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+  width: 50%;
+  height: 50px;
+  background: #e84c3d;
+  font-size: 14px;
+  font-family: opensans;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  border: none;
+}
+.copy {
+  width: 100%;
+  height: auto;
+  background: #e84c3d;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.copy {
+  font-size: 15px;
+  font-family: opensans;
+  color: white;
+  text-align: center;
 }
 .header {
   width: 100%;
@@ -1405,6 +1548,16 @@ li {
   }
   .basic ul {
     padding: 0;
+  }
+}
+@media (max-width: 414px) {
+  .contact-left .name {
+    width: 100%;
+  }
+  .contact-left .email {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 22px;
   }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 414px) {
