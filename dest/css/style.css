@@ -378,6 +378,26 @@ li {
   padding-left: 0;
   padding-right: 0;
 }
+.border {
+  border-bottom: 1px solid #e6e6e6;
+  width: 22%;
+  height: 1px;
+}
+.step-mid {
+  position: relative;
+}
+.border1 {
+  position: absolute;
+  z-index: 999;
+  top: 20%;
+  left: 24.5%;
+}
+.border2 {
+  position: absolute;
+  z-index: 999;
+  top: 20%;
+  left: 53.6%;
+}
 .work {
   width: 100%;
   height: auto;
@@ -603,11 +623,19 @@ li {
   font-size: 30px;
   font-family: roboto-light;
   color: white;
+  padding-top: 0;
+  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .ideas-in p:nth-child(2) {
   font-size: 20px;
   font-family: roboto-light;
   color: white;
+  padding-top: 0;
+  padding-bottom: 30px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .ideas-in a > p {
   font-size: 16px !important;
@@ -1605,8 +1633,17 @@ li {
   .menu ul li {
     margin-right: 19px;
   }
+  .border1 {
+    left: 23%;
+  }
+  .border2 {
+    left: 55%;
+  }
 }
 @media (max-width: 768px) {
+  .border {
+    display: none;
+  }
   .work-into {
     width: 100%;
   }
