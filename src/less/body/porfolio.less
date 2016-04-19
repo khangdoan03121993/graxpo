@@ -1,55 +1,178 @@
 @import '../function/function';
 @import '../font/font';
-
-.profolio{
-	.size(100%, auto, #f3f3f3);
-	.padding(100px, 0, 0, 0);
+.profolio {
+    .size(100%, auto, #f3f3f3);
+    .padding(100px, 0, 0, 0);
 }
 
-.porfolio-top p:first-child{
-	.p(20px, roboto-medium, #333b46);
-	.text-align;
+.porfolio-top p:first-child {
+    .p(20px, roboto-medium, #333b46);
+    .text-align;
 }
 
-.porfolio-top p:nth-child(2){
-	.size(45px, 3px, #898989);
-	.margin(0, 0, auto, auto);
+.porfolio-top p:nth-child(2) {
+    .size(45px, 3px, #898989);
+    .margin(0, 0, auto, auto);
 }
 
-.porfolio-top p:last-child{
-	.p(14px, opensans, #93979e);
-	.padding(30px, 0, 0, 0);
-	.text-align;
-	.size(40%, auto, none);
-	.margin(0, 0, auto, auto);
+.porfolio-top p:last-child {
+    .p(14px, opensans, #93979e);
+    .padding(30px, 65px, 0, 0);
+    .text-align;
+    .size(40%, auto, none);
+    .margin(0, 0, auto, auto);
 }
 
-.porfolio-mid{
-	.text-align;
+.portfolio-filter ul {
+    .text-align;
+    .padding(0, 55px, 0, 0);
 }
 
-.porfolio-mid ul{
-	.text-align;
-	.padding(65px, 45px, 0, 0);
-	display: inline-block;
+.portfolio-filter ul li {
+    display: inline-block;
+    .relative;
+    .padding(0, 0, 15px, 15px);
+    cursor: pointer;
 }
 
-.porfolio-mid ul li{
-	.float;
+.portfolio-filter ul li:before {
+    .absolute-right;
+    content: '/';
 }
 
-.porfolio-mid ul li a > p:first-child{
-	.p(13px, opensans, #464646);
+.portfolio-filter ul li:last-child:before {
+    display: none;
 }
 
-.porfolio-mid ul li a > p:last-child{
-	.size(35px, 2px, #f3f3f3);
+.portfolio-filter ul li p:nth-child(2) {
+	.size(30px, 2px, #f3f3f3);
 }
 
-.porfolio-mid ul li:first-child a > p:last-child{
-	.size(35px, 2px, #898989);
+.portfolio-filter ul li:hover p:nth-child(2) {
+	.size(30px, 2px, #898989);
 }
 
-.porfolio-mid ul li:hover a > p:last-child{
-	.size(35px, 2px, #898989);
+.active p:nth-child(2){
+	.size(30px, 2px, #898989)!important;
+}
+
+.grid {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item {
+    width: 33.3334%;
+    .relative;
+}
+
+
+
+.grid-in{
+	display: none;
+}
+
+.grid-item:hover .grid-in{
+	.absolute(absolute, 999, 5%, 5%);
+	.size(90%, 90%, #e84c3d);
+	.opacity(0.89);
+	display: block;
+}
+
+.grid-in-16{
+	.padding(20%, 0, 10%, 0);
+}
+
+.grid-in-33{
+	.padding(60%, 0, 10%, 0);
+}
+
+.grid-in p:first-child{
+	.p(20px, roboto-medium, white);
+}
+
+.grid-in p:nth-child(2){
+	.p(16px, roboto-light, white);
+	.padding(0, 10px, 0, 0);
+}
+
+.grid-in p:last-child{
+	.size(35px, 2px, #c2c2c2);
+}
+
+.grid-item img {
+    width: 100%;
+    float: left;
+}
+
+.grid-item1 {
+    background: url('../images/cat.png') no-repeat center;
+    padding-bottom: 16.667%;
+    background-size: cover;
+}
+
+.grid-item2 {
+    background: url('../images/bones.png') no-repeat center;
+    padding-bottom: 33.334%;
+    background-size: cover;
+}
+
+.grid-item3 {
+    background: url('../images/swirl.png') no-repeat center;
+    padding-bottom: 16.667%;
+    background-size: cover;
+}
+
+.grid-item4 {
+    background: url('../images/wine.png') no-repeat center;
+    padding-bottom: 33.334%;
+    background-size: cover;
+}
+
+.grid-item5 {
+    background: url('../images/fingers.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item6 {
+    background: url('../images/hat.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item7 {
+    background: url('../images/graphica.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item8 {
+    background: url('../images/free-psd.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item9 {
+    background: url('../images/grande.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item10 {
+    background: url('../images/design.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 33.334%;
+}
+
+.grid-item11 {
+    background: url('../images/mock.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
+}
+
+.grid-item12 {
+    background: url('../images/bee.png') no-repeat center;
+    background-size: cover;
+    padding-bottom: 16.667%;
 }

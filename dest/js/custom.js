@@ -1,3 +1,53 @@
+$(document).ready(function(){
+  $('.grid').isotope({
+    layoutMode: 'masonry',
+        itemSelector: '.grid-item',
+        percentPosition: true,
+         
+  });
+ 
+
+ $('.portfolio-filter li').click(function(){
+  $('.portfolio-filter li').removeClass('active');
+  $(this).addClass('active');
+  var selector = $(this).attr('data-filter');
+  $('.portfolio-item').isotope({
+    filter: selector,
+    animationOptions: {
+      duration: 750,
+      easing: 'linear',
+      queue: false
+    }
+  });
+  return false;
+ })
+
+ $(window).resize(function(){
+
+  if ($(window).width() <= 768){  
+    $('.grid').isotope({
+    layoutMode: 'vertical',
+        itemSelector: '.grid-item',
+        percentPosition: true,
+     
+  });
+  }else {
+    $('.grid').isotope({
+    layoutMode: 'masonry',
+        itemSelector: '.grid-item',
+        percentPosition: true,
+          
+  });
+  }
+  
+});
+ 
+})
+
+$(window).on('load', function(){
+  $(window).trigger('resize');
+})
+
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide"
