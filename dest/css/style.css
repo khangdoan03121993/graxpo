@@ -552,7 +552,7 @@ li {
   background: none;
   padding-top: 5%;
   padding-bottom: 0;
-  padding-left: 10%;
+  padding-left: 15%;
   padding-right: 0;
 }
 .service-text p:first-child {
@@ -1149,6 +1149,9 @@ li {
   width: 10px;
   height: 10px;
   background: #e84c3d;
+}
+.flex-active {
+  background: #e84c3d!important;
 }
 .blog {
   width: 100%;
