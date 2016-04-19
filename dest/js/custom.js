@@ -5,6 +5,13 @@ $(document).ready(function(){
         percentPosition: true,
          
   });
+
+  $('.work-mid').isotope({
+    layoutMode: 'masonry',
+        itemSelector: '.work-into',
+        percentPosition: true,
+         
+  });
  
 
  $('.portfolio-filter li').click(function(){
@@ -31,6 +38,14 @@ $(document).ready(function(){
         percentPosition: true,
      
   });
+
+     $('.work-mid').isotope({
+    layoutMode: 'vertical',
+        itemSelector: '.work-into',
+        percentPosition: true,
+         
+  });
+
   }else {
     $('.grid').isotope({
     layoutMode: 'masonry',
@@ -38,6 +53,14 @@ $(document).ready(function(){
         percentPosition: true,
           
   });
+
+     $('.work-mid').isotope({
+    layoutMode: 'masonry',
+        itemSelector: '.work-into',
+        percentPosition: true,
+         
+  });
+    
   }
   
 });

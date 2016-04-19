@@ -420,14 +420,12 @@ li {
   margin-right: auto;
 }
 .work-mid {
-  display: flex;
   width: 100%;
   height: auto;
   background: none;
 }
 .work-into {
   float: left;
-  flex: 1 1;
   padding-bottom: 23.8%;
   width: 33.33333333%;
 }
@@ -1609,6 +1607,9 @@ li {
   }
 }
 @media (max-width: 768px) {
+  .work-into {
+    width: 100%;
+  }
   .logo p {
     text-align: center;
   }
@@ -1685,6 +1686,9 @@ li {
   }
   .grid-in-33 {
     padding-top: 15%;
+  }
+  .work-into .work-in p {
+    margin-top: 7%!important;
   }
 }
 @media (max-width: 414px) {
