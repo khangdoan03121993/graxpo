@@ -1,4 +1,45 @@
+
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
+}
+
+$(function(){
+  $('a[href^="#"]').click(function(e){
+    var top = 0;
+    var target = $(this).attr('href');
+    var strip = target.slice(1);
+    var anchor = $("div[name='" + strip + "']");
+    e.preventDefault();
+
+   var a = $('html, body').animate({
+      scrollTop: anchor.offset().top
+    }, 2000);
+  })
+})
+ 
+
 $(document).ready(function(){
+
+ 
+
   $('.grid').isotope({
     layoutMode: 'masonry',
         itemSelector: '.grid-item',
