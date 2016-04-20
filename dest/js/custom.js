@@ -92,7 +92,7 @@ $(window).load(function() {
         $('.user > a > img').each(function(){  
                 if($(this).height() > highestBox){  
                 highestBox = $(this).height(); 
-                highestBox1 = highestBox*1.5;
+                highestBox1 = highestBox*1.3;
         }
         return highestBox1;
     }); 

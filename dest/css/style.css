@@ -926,6 +926,9 @@ li {
   color: white;
   line-height: 3;
 }
+.subscribe-right ::-webkit-input-placeholder {
+  color: white;
+}
 .crew {
   width: 100%;
   height: auto;
@@ -979,7 +982,7 @@ li {
 .user:hover .user-box {
   position: absolute;
   z-index: 99;
-  top: 40%;
+  top: 35%;
   left: 5%;
   width: 90%;
   height: auto;
@@ -1312,6 +1315,12 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+.basic ul {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
 .basic ul li {
   border-top: 1px solid #d7d7d7;
   border-left: 1px solid #d7d7d7;
@@ -1532,10 +1541,12 @@ li {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.logo a {
+  font-size: 28px !important;
+  font-family: lecker !important;
+  color: #e84c3d !important;
+}
 .logo p {
-  font-size: 28px;
-  font-family: lecker;
-  color: #e84c3d;
   padding-top: 60px;
   padding-bottom: 0;
   padding-left: 0;
@@ -1612,7 +1623,7 @@ li {
   color: #81868e;
 }
 .box-in2 {
-  padding-top: 200px;
+  padding-top: 160px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -1755,6 +1766,13 @@ li {
     font-size: 13px;
     padding-bottom: 0;
   }
+  .subscribe-right button {
+    border-left: 1px solid white;
+    margin-top: 10px;
+  }
+  .box-in2 {
+    padding-top: 100px;
+  }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 414px) {
   .work-into:hover .work-in p {
@@ -1763,13 +1781,6 @@ li {
   }
   .flex-in {
     flex: 1 1;
-  }
-  .box-in2 {
-    padding-top: 130px;
-  }
-  .subscribe-right button {
-    border-left: 1px solid white;
-    margin-top: 10px;
   }
 }
 @media (max-width: 320px) {
@@ -1784,9 +1795,6 @@ li {
   }
   .box-in1 {
     padding-top: 300px;
-  }
-  .box-in2 {
-    padding-top: 125px;
   }
   .simple-step p:first-child {
     width: 90px;
