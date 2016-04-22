@@ -54,28 +54,18 @@
 	.relative;
 }
 
-.work-into:hover .work-in{
-	display: block;
+.work-in{
+	display: none;
 }
 
-.work-into .work-in{
+
+.work-into:hover .work-in{
 	.absolute(absolute,99, 5%, 5%);
 	.size(90%, 90%, #e84c3d);
 	.opacity(0.8);
 	cursor: pointer;
-	display: none;
-	-webkit-animation-name: example;
-	-webkit-animation-duration: 2s;
+	display: block;
 }
-
-
-
-@-webkit-keyframes example {
-    from {left:-100%;}
-    to {left:5%;}
-}
-
-
 
 
 .work-into .work-in p{

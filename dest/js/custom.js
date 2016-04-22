@@ -26,10 +26,6 @@ if ($('#back-to-top').length) {
 
 $(document).ready(function(){
 
-  $(window).on("scroll", function(){
-        $(this).css('transition-delay','2s');
-    });
-
     //scroll to each section
 
    $('a[href^="#"]').click(function(e){
