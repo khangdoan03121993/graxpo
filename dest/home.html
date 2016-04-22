@@ -13,9 +13,14 @@
 	<meta charset="utf-8">	
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta name="format-detection" content="telephone-no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- css file -->
 	<link rel="stylesheet" href="css/style.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/input-field.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 </head>
 
 <body>
@@ -464,9 +469,13 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 	aliqua. Ut enim ad minim veniam</p>
 			</div>
 			<div class="subscribe-right col-xs-12 col-sm-12 col-md-6">
-				<input type="text" placeholder="Enter email address">
-				<!-- <a href="#"><p>SUBSCRIBE</p></a> -->
-				<button><p>SUBSCRIBE</p></button>
+				<span class="input input--kaede">
+					<input class="input__field input__field--kaede" type="text" id="input-35" />
+					<label class="input__label input__label--kaede" for="input-35">
+						<span class="input__label-content input__label-content--kaede email-s">Enter email address</span>
+					</label>
+				</span>
+				<button class=" btn-1 btn-1a button-s">SUBSCRIBE</button>
 			</div>
 		</div>
 	</div>
@@ -775,10 +784,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="contact-left col-xs-12 col-sm-12 col-md-7">
-						<input type="text"	placeholder="Your Name" class="name">
-						<input type="text"	placeholder="Email Address" class="email">
-						<input type="text"	placeholder="Message" class="mess">
-						<button>SUBMIT NOW</button>
+						<span class="input input1 input--kaede">
+							<input class="input__field input__field--kaede" type="text" id="input-38" />
+							<label class="input__label input__label--kaede label-name" for="input-38">
+								<span class="input__label-content input__label-content--kaede email-s content-n">Your Name</span>
+							</label>
+						</span>
+						<span class="input input2 input--kaede">
+							<input class="input__field input__field--kaede" type="text" id="input-36" />
+							<label class="input__label input__label--kaede label-name" for="input-36">
+								<span class="input__label-content input__label-content--kaede email-s content-n">Email Address</span>
+							</label>
+						</span>
+						<span class="input input3 input--kaede">
+							<input class="input__field input__field--kaede" type="text" id="input-37" />
+							<label class="input__label input__label--kaede label-name" for="input-37">
+								<span class="input__label-content input__label-content--kaede email-s content-n mess-c">Message</span>
+							</label>
+						</span>
+					<button class=" btn-1 btn-1a button-s">SUBMIT NOW</button>
 					</div>
 
 					<div class="contact-right col-xs-12 col-sm-12 col-md-5">
@@ -814,5 +838,6 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
+<!-- <script src="js/classie.js"></script> -->
 </body>
 </html>

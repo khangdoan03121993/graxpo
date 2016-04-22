@@ -885,49 +885,45 @@ li {
   padding-right: 0;
 }
 .subscribe-right {
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
 }
-.subscribe-right input[type="text"] {
-  width: 275px;
-  height: 40px;
-  background: #e84c3d;
-  float: left;
-}
-.subscribe-right input[placeholder] {
-  font-size: 12.5px;
-  font-family: opensans;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 0;
+.input--kaede {
   border: 1px solid white;
 }
-.subscribe-right button {
-  width: 130px;
-  height: 40px;
-  background: #e84c3d;
-  border-top: 1px solid white;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
-  border-left: none;
-  margin-top: 0;
+.input__label--kaede {
+  margin-top: none;
   margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  float: left;
+  margin-left: none;
+  margin-right: none;
+  background: #e84c3d;
 }
-.subscribe-right button p {
+.email-s {
+  font-size: 12.5px !important;
+  font-family: opensans !important;
+  color: white !important;
+}
+.input__field {
+  font-size: 12.5px !important;
+  font-family: opensans !important;
+  color: #e84c3d !important;
+}
+.input--kaede {
+  float: left;
+  background: none!important;
+}
+.button-s {
+  border-radius: 0!important;
+  border: 1px solid white;
   font-size: 12.5px;
   font-family: roboto-bold;
   color: white;
-  line-height: 3;
-}
-.subscribe-right ::-webkit-input-placeholder {
-  color: white;
+  border-left: none;
+  width: 130px;
+  height: 56px;
+  background: #e84c3d;
 }
 .crew {
   width: 100%;
@@ -1279,7 +1275,7 @@ li {
   height: auto;
   background: #f3f3f3;
   padding-top: none;
-  padding-bottom: 100px;
+  padding-bottom: none;
   padding-left: none;
   padding-right: none;
 }
@@ -1390,7 +1386,7 @@ li {
   width: 100%;
   height: auto;
   background: #f3f3f3;
-  padding-top: none;
+  padding-top: 100px;
   padding-bottom: 80px;
   padding-left: none;
   padding-right: none;
@@ -1451,52 +1447,10 @@ li {
   height: auto;
   background: none;
 }
-.contact-left .name {
-  width: 47%;
-  height: 45px;
-  background: #f3f3f3;
-  border: 1px solid #ebebeb;
-  padding-top: none;
-  padding-bottom: none;
-  padding-left: 15px;
-  padding-right: none;
-  font-size: 14px;
-  font-family: opensans;
-  color: #81868e;
-}
-.contact-left .email {
-  width: 48%;
-  height: 45px;
-  background: #f3f3f3;
-  border: 1px solid #ebebeb;
-  margin-top: none;
-  margin-bottom: none;
-  margin-left: 22px;
-  margin-right: none;
-  padding-top: none;
-  padding-bottom: none;
-  padding-left: 15px;
-  padding-right: none;
-  font-size: 14px;
-  font-family: opensans;
-  color: #81868e;
-}
-.contact-left .mess {
-  width: 99%;
-  height: auto;
-  background: #f3f3f3;
-  border: 1px solid #ebebeb;
-  margin-top: 22px;
-  margin-bottom: none;
-  margin-left: none;
-  margin-right: none;
-  padding-top: 20px;
-  padding-bottom: 215px;
-  padding-left: 25px;
-  padding-right: none;
-  font-size: 14px;
-  font-family: opensans;
-  color: #81868e;
+span.content-n {
+  font-size: 14px !important;
+  font-family: opensans !important;
+  color: #81868e !important;
 }
 .contact-left button {
   margin-top: 22px;
@@ -1512,6 +1466,35 @@ li {
   text-align: center;
   line-height: 2;
   border: none;
+}
+.input {
+  border: 1px solid #ebebeb;
+}
+.input1,
+.input2 {
+  max-width: 46%;
+}
+.input2 {
+  margin-top: none;
+  margin-bottom: none;
+  margin-left: 25px;
+  margin-right: none;
+}
+.input3 {
+  margin-top: 22px;
+  margin-bottom: none;
+  margin-left: none;
+  margin-right: none;
+  max-width: 100%;
+}
+span.mess-c {
+  padding-top: 5px;
+  padding-bottom: 200px;
+  padding-left: none;
+  padding-right: none;
+}
+.label-name {
+  background: #f3f3f3!important;
 }
 .copy {
   width: 100%;
@@ -1659,7 +1642,7 @@ li {
   opacity: 0;
 }
 #back-to-top:hover {
-  background: #e9ebec;
+  background: #e84c3d;
 }
 #back-to-top.show {
   opacity: 1;
@@ -1677,8 +1660,16 @@ li {
   .border2 {
     left: 55%;
   }
+  .input1,
+  .input2 {
+    max-width: 45%;
+  }
 }
 @media (max-width: 768px) {
+  .input1,
+  .input2 {
+    max-width: 46.3%;
+  }
   .border {
     display: none;
   }
@@ -1764,6 +1755,14 @@ li {
   }
 }
 @media (max-width: 414px) {
+  .input1,
+  .input2 {
+    max-width: 100%!important;
+  }
+  .input2 {
+    margin-left: 0;
+    margin-top: 22px;
+  }
   .contact-left .name,
   .contact-left .mess {
     width: 100%;
@@ -1818,7 +1817,7 @@ li {
     padding-top: 30px;
   }
   .box-in1 {
-    padding-top: 300px;
+    padding-top: 100px;
   }
   .simple-step p:first-child {
     width: 90px;
