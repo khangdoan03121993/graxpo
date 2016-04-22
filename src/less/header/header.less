@@ -100,6 +100,7 @@
     text-decoration: none;
     transition: opacity 0.2s ease-out;
     opacity: 0;
+    -webkit-transition: 0.5s;
 }
 #back-to-top:hover {
     background: #e84c3d;
@@ -107,3 +108,13 @@
 #back-to-top.show {
     opacity: 1;
 }
+
+.underlin-header{
+	.size(30px, 3px, #e1e1e1);
+}
+
+.menu ul li:hover .underlin-header{
+	.size(30px, 3px, #898989);
+	-webkit-transition: 1s;
+}
+

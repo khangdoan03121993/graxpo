@@ -85,6 +85,19 @@ li {
 .about-img img {
   max-width: 100%;
 }
+.about-img img {
+  max-width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.about-img:hover img {
+  transform: scale(1.1);
+}
+.about-text .learn:hover {
+  background: white;
+}
+.about-text .learn:hover p {
+  color: #e84c3d!important;
+}
 .what {
   width: 100%;
   height: auto;
@@ -140,6 +153,7 @@ li {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  transition: all 0.2s ease-in-out;
 }
 .what-mid .ui p:first-child {
   float: left;
@@ -188,6 +202,7 @@ li {
   border: 3px solid #e84c3d;
   background: #e84c3d;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .what-mid .ui:hover p:nth-child(2) {
   font-size: 16px;
@@ -478,6 +493,16 @@ li {
   opacity: 0.8;
   cursor: pointer;
   display: block;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes example {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 5%;
+  }
 }
 .work-into .work-in p {
   text-align: center;
@@ -652,6 +677,10 @@ li {
   margin-right: auto;
   opacity: 1 !important;
 }
+.ideas-in a > p:hover {
+  background: white;
+  color: #e84c3d!important;
+}
 .profolio {
   width: 100%;
   height: auto;
@@ -728,6 +757,7 @@ li {
   width: 30px;
   height: 2px;
   background: #898989;
+  -webkit-transition: 1s;
 }
 .active p:nth-child(2) {
   width: 30px !important;
@@ -755,6 +785,16 @@ li {
   background: #e84c3d;
   opacity: 0.89;
   display: block;
+  -webkit-animation-name: example1;
+  -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes example1 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 5%;
+  }
 }
 .grid-in-16 {
   padding-top: 20%;
@@ -925,6 +965,9 @@ li {
   height: 56px;
   background: #e84c3d;
 }
+.text-subscribe {
+  width: calc(75%) !important;
+}
 .crew {
   width: 100%;
   height: auto;
@@ -988,6 +1031,16 @@ li {
   padding-left: 0;
   padding-right: 0;
   display: block;
+  -webkit-animation-name: example2;
+  -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes example2 {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 35%;
+  }
 }
 .user-box p.user-content {
   font-size: 11px;
@@ -1213,6 +1266,16 @@ li {
   padding-left: 30px;
   padding-right: 0;
   display: none;
+  -webkit-animation-name: example3;
+  -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes example3 {
+  from {
+    right: -10%;
+  }
+  to {
+    right: 2%;
+  }
 }
 .blog-info {
   width: 80%;
@@ -1368,13 +1431,18 @@ li {
   line-height: 2;
   border-radius: 4px;
 }
+.basic {
+  transition: all 0.2s ease-in-out;
+}
 .basic:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 .basic:hover ul li:last-child p {
   background: #e84c3d;
   color: white;
   border: 1px solid #e84c3d;
+  -webkit-transition: 2s;
 }
 .basic-in {
   border-radius: 10px;
@@ -1640,12 +1708,24 @@ span.mess-c {
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   opacity: 0;
+  -webkit-transition: 0.5s;
 }
 #back-to-top:hover {
   background: #e84c3d;
 }
 #back-to-top.show {
   opacity: 1;
+}
+.underlin-header {
+  width: 30px;
+  height: 3px;
+  background: #e1e1e1;
+}
+.menu ul li:hover .underlin-header {
+  width: 30px;
+  height: 3px;
+  background: #898989;
+  -webkit-transition: 1s;
 }
 .clear {
   clear: both;
@@ -1666,6 +1746,16 @@ span.mess-c {
   }
 }
 @media (max-width: 768px) {
+  .menu ul li p.underlin-header {
+    display: none;
+  }
+  .menu ul li {
+    margin: 0;
+  }
+  .menu ul li:hover {
+    background: black;
+    -webkit-transition: 0.5s;
+  }
   .input1,
   .input2 {
     max-width: 46.3%;
@@ -1755,6 +1845,15 @@ span.mess-c {
   }
 }
 @media (max-width: 414px) {
+  .subscribe-right input[type="text"] {
+    width: 100%;
+  }
+  .basic {
+    margin-bottom: 30px;
+  }
+  .text-subscribe {
+    width: 100%!important;
+  }
   .input1,
   .input2 {
     max-width: 100%!important;
