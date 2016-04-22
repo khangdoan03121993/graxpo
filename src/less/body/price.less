@@ -65,14 +65,20 @@
 	.border-radius(4px);
 }
 
+.basic{
+	transition: all .2s ease-in-out;
+}
+
 .basic:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 
 .basic:hover ul li:last-child p{
 	background: #e84c3d;
 	color: white;
 	border: 1px solid #e84c3d;
+	-webkit-transition: 2s;
 }
 .basic-in{
 	.border-radius(10px);
