@@ -6,8 +6,11 @@
 	.padding(110px, 130px);
 }
 
-.about-text p:first-child{
+
+.about-text h1{
 	.p(20px, roboto-medium, #333b46);
+	.margin(0,0,0,0);
+	.padding(0, 20px, 0,0);
 }
 
 .about-text p:nth-child(2){
@@ -42,12 +45,14 @@
 	transition: all .2s ease-in-out;
 }
 
-.about-img:hover img{ transform: scale(1.1); }
+
 
 .about-text .learn:hover {
 	background: white;
+	-webkit-transition: 0.5s;
 }
 
 .about-text .learn:hover p{
 	color: #e84c3d!important;
+	-webkit-transition: 0.5s;
 }
