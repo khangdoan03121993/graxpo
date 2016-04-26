@@ -33,10 +33,7 @@ $(document).ready(function(){
     time: 5000
   });
 
-  //parallax
 
-  // $('.parallax').parallax();
-    
    //set same height
   
   var highestBox = 0;
@@ -71,9 +68,7 @@ $(document).ready(function(){
     $('.blog-height > a > img').height(highestBox);
     $('.ui').height(highestBox2);
 
-  $(window).on("scroll", function(){
-        $(this).css('transition-delay','2s');
-    });
+  
 
     //scroll to each section
 
@@ -189,10 +184,6 @@ $(window).load(function() {
   $('.test > ol').addClass('pagging');
   $('.pagging').find('a').empty();
   $('.flex-viewport').addClass('slider');
-
- 
-
-  
 
 
 });

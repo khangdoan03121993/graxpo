@@ -39,6 +39,12 @@ li {
   padding-left: 0;
   padding-right: 0;
 }
+.about-text {
+  padding-top: none;
+  padding-bottom: none;
+  padding-left: 70px;
+  padding-right: none;
+}
 .about-text h1 {
   font-size: 20px;
   font-family: roboto-medium;
@@ -519,7 +525,7 @@ li {
 }
 .work-in {
   transform: translateX(-100%);
-  -webkit-transition: 1s;
+  -webkit-transition: 0.5s;
   position: absolute;
   z-index: 0;
   top: 5%;
@@ -815,7 +821,7 @@ li {
   width: 30px;
   height: 2px;
   background: #898989;
-  -webkit-transition: 0.5s;
+  -webkit-transition: 0.1s;
 }
 .active p:nth-child(2) {
   width: 30px !important;
@@ -1082,7 +1088,7 @@ li {
 }
 .user-box {
   transform: translateY(175%);
-  -webkit-transition: 1s;
+  -webkit-transition: 0.5s;
   position: absolute;
   z-index: 99;
   top: 0;
@@ -1331,7 +1337,7 @@ li {
 }
 .blog-in {
   transform: translateX(105%);
-  -webkit-transition: 1s;
+  -webkit-transition: 0.5s;
   position: absolute;
   z-index: 0;
   top: 0;
@@ -1850,6 +1856,9 @@ textarea:focus {
   }
 }
 @media (max-width: 768px) {
+  .about-text {
+    padding-left: 0!important;
+  }
   .menu ul li {
     margin: 0;
   }
