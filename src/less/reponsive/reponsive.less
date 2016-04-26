@@ -21,9 +21,7 @@
 
 @media (max-width: 768px){
 
-	.menu ul li p.underlin-header{
-		display: none;
-	}
+
 
 	.menu ul li{
 		margin: 0;
@@ -33,6 +31,10 @@
 	.menu ul li:hover{
 		background: black;
 		-webkit-transition: 0.5s;
+	}
+
+	.menu ul li:hover p.underlin-header{
+		background: none;
 	}
 
 	.input1, .input2 {
@@ -95,7 +97,7 @@
 		height: 25px;
 		background: url('../images/icon-menu.png') no-repeat center;
 		top: 60px;
-		right: 0;
+		right: 2%;
 	}
 
 
@@ -146,6 +148,32 @@
 }
 
 @media (max-width: 414px){
+
+	.what-mid .ui p:first-child, .what-mid .ui:hover p:first-child {
+		float:none;
+		margin: 30px auto;
+	}
+
+	.what-mid .ui p:nth-child(2), .what-mid .ui p:last-child, .what-mid .ui:hover p:nth-child(2), .what-mid .ui:hover p:last-child {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	.what-mid .ui p:nth-child(3), .what-mid .ui:hover p:nth-child(3) {
+		margin: 25px auto;		
+	}
+
+	.what-mid .ui p:nth-child(2), .what-mid .ui:hover p:nth-child(2){
+		padding-top: 20px;
+	}
+
+	.what-mid .ui p:last-child, .what-mid .ui:hover p:last-child {
+		padding-top: 5px;
+	}
+
+	.menu ul li p.underlin-header{
+		display: none;
+	}
 
 	.subscribe-right input[type="text"] {
 		width: 100%;

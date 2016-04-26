@@ -17,19 +17,31 @@ if ($('#back-to-top').length) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
-        }, 2000);
+        }, 0.5);
     });
 }
 
 $('.logo p:nth-child(2)').remove();
- 
+
 
 $(document).ready(function(){
 
+  //counter up
+
+  $('.counter').counterUp({
+    delay: 100,
+    time: 5000
+  });
+
+  //parallax
+
+  // $('.parallax').parallax();
+    
    //set same height
   
   var highestBox = 0;
      var highestBox1;
+     var highestBox2;
         $('.user > a > img').each(function(){  
                 if($(this).height() > highestBox){  
                 highestBox = $(this).height(); 
@@ -46,9 +58,18 @@ $(document).ready(function(){
         return highestBox;
     }); 
 
+    $('.ui').each(function(){  
+                if($(this).height() > highestBox){  
+                highestBox = $(this).height(); 
+                highestBox2 = highestBox;
+                
+        }
+        return highestBox2;
+    });
 
     $('.user > a > img').height(highestBox1);
     $('.blog-height > a > img').height(highestBox);
+    $('.ui').height(highestBox2);
 
   $(window).on("scroll", function(){
         $(this).css('transition-delay','2s');
@@ -65,7 +86,7 @@ $(document).ready(function(){
 
    var a = $('html, body').animate({
       scrollTop: anchor.offset().top
-    }, 2000);
+    }, 1000);
   })
 
    //masonry on isotope

@@ -268,6 +268,7 @@ li {
   height: auto;
   background: url('../images/street.png') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .parameter-in {
   width: 100%;
@@ -669,6 +670,7 @@ li {
   height: auto;
   background: url('../images/building.png') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .ideas-in {
   background: black;
@@ -681,7 +683,7 @@ li {
 .ideas-in p {
   text-align: center;
 }
-.ideas-in p:first-child {
+.ideas-in h1 {
   font-size: 30px;
   font-family: roboto-light;
   color: white;
@@ -689,8 +691,13 @@ li {
   padding-bottom: 15px;
   padding-left: 0;
   padding-right: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
-.ideas-in p:nth-child(2) {
+.ideas-in h2 {
   font-size: 20px;
   font-family: roboto-light;
   color: white;
@@ -698,6 +705,11 @@ li {
   padding-bottom: 30px;
   padding-left: 0;
   padding-right: 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .ideas-in a > p {
   font-size: 16px !important;
@@ -935,6 +947,8 @@ li {
   height: auto;
   background: url('../images/dell.png') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 0;
 }
 .subscribe-in {
   background: #e84c3d;
@@ -1128,6 +1142,7 @@ li {
   height: auto;
   background: url('../images/bicycle.png') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 .test-top,
@@ -1662,6 +1677,8 @@ textarea:focus {
   height: 799px;
   background: url('../images/main.png') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
+  background-position-y: 0;
 }
 .logo,
 .menu {
@@ -1737,7 +1754,7 @@ textarea:focus {
   padding-left: 0;
   padding-right: 0;
 }
-.box-in1 p:first-child {
+.box-in1 h1 {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -1745,18 +1762,27 @@ textarea:focus {
   font-size: 35px;
   font-family: roboto-medium;
   color: #333b46;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
 }
-.box-in1 p:last-child {
+.box-in1 h2 {
   font-size: 16px;
   font-family: opensans;
   color: #81868e;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .box-in2 {
   padding-top: 160px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  cursor: pointer;
 }
 .box-in2 p:first-child {
   background: url('../images/scroll-down.png') no-repeat center !important;
@@ -1824,15 +1850,15 @@ textarea:focus {
   }
 }
 @media (max-width: 768px) {
-  .menu ul li p.underlin-header {
-    display: none;
-  }
   .menu ul li {
     margin: 0;
   }
   .menu ul li:hover {
     background: black;
     -webkit-transition: 0.5s;
+  }
+  .menu ul li:hover p.underlin-header {
+    background: none;
   }
   .input1,
   .input2 {
@@ -1885,7 +1911,7 @@ textarea:focus {
     height: 25px;
     background: url('../images/icon-menu.png') no-repeat center;
     top: 60px;
-    right: 0;
+    right: 2%;
   }
   .box-in1 p {
     text-align: center;
@@ -1926,6 +1952,33 @@ textarea:focus {
   }
 }
 @media (max-width: 414px) {
+  .what-mid .ui p:first-child,
+  .what-mid .ui:hover p:first-child {
+    float: none;
+    margin: 30px auto;
+  }
+  .what-mid .ui p:nth-child(2),
+  .what-mid .ui p:last-child,
+  .what-mid .ui:hover p:nth-child(2),
+  .what-mid .ui:hover p:last-child {
+    padding-left: 0;
+    text-align: center;
+  }
+  .what-mid .ui p:nth-child(3),
+  .what-mid .ui:hover p:nth-child(3) {
+    margin: 25px auto;
+  }
+  .what-mid .ui p:nth-child(2),
+  .what-mid .ui:hover p:nth-child(2) {
+    padding-top: 20px;
+  }
+  .what-mid .ui p:last-child,
+  .what-mid .ui:hover p:last-child {
+    padding-top: 5px;
+  }
+  .menu ul li p.underlin-header {
+    display: none;
+  }
   .subscribe-right input[type="text"] {
     width: 100%;
   }
