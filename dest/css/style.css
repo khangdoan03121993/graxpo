@@ -1647,7 +1647,7 @@ textarea:focus {
   resize: none;
 }
 .submit input[type] {
-  width: 40%;
+  width: 45%;
   height: 50px;
   background: #e84c3d;
   font-size: 14px;
