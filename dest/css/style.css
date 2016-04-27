@@ -311,6 +311,7 @@ li {
   font-family: roboto-regular;
   color: white;
   opacity: 1 !important;
+  height: 44px;
 }
 .box-in3 p:last-child {
   width: 45px;
